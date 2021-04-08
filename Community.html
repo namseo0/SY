@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seoyoung's Community</title>
+    <script>
+        function click() {
+            var name = document.getElementById("name");
+            alert("님 소중한 의견 감사합니다.");        
+        }
+    </script>
+    <style>
+        #title {    /*제목 글씨 색 설정*/
+            color:rgb(240, 227, 206);
+            font-size: 35px;
+            text-align: center;
+            text-shadow: 2px 2px rgb(80, 78, 102);
+            padding:20px
+        }
+        body {
+            background-color: rgb(138, 155, 127);
+        }
+        #menubar {  /* 메뉴바 배경 설정 */
+            background:rgb(228, 211, 185);
+            height:30px;
+            weight:850px; 
+        }
+        #menubar ul li {
+            display: inline-block; /* 새 줄로 넘어가지 않게 */
+            list-style-type: none; /* 마커 삭제 */
+            margin : 0 auto;
+            float: left;   
+            line-height: 30px;
+            vertical-align: middle;
+            text-align: center;
+            padding: 0px 4%; /* top=bottom=0, left=right=15px */
+        }
+        #menubar ul li a {
+            display: block; 
+            color:rgb(98, 101, 121);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #menubar ul li a:hover {
+            color: rgb(248, 248, 248); /* 마우스 올라 갈 때 색 변경*/
+        }
+        h2 {
+            color:rgb(101, 119, 180);
+        }
+        h6 {
+            text-align: center;
+        }
+        </style>
+
+</head>
+<body>
+    <p id="title"><strong>Seoyoung's Web Page</strong></p>
+    <!--메뉴바 -->
+    <nav id="menubar">  
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="2019.html">2019year</a></li>
+            <li><a href="2020.html">2020year</a></li>
+            <li><a href="2021.html">2021year</a></li>
+            <li><a href="Community.html">Community</a></li>
+        </ul>        
+    </nav>
+
+    <br><br><h3><span style="color:blanchedalmond"> Welcome to My Community :D</span></h3><hr><br>
+    <br><br><h2>Message</h2>
+    <hr>
+    저에게 하고싶은 말씀이 있으시면 메모를 남겨주세요. :) <!--전송 구현 X 알람메시지만 뜸-->
+    <br><br>
+    <form>
+        <table>
+            <tr>
+                <td>성함 </td> <td><input type="text" id="name" value=""><br></td> <!--입력-->
+            </tr>
+            <tr>
+                <td>의견 </td><td><input type="text" id="result"></td>
+                <td><input type="button" value="의견 제출" onclick="click()"></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <br><br><br>
+    <!--<div id="disqus_thread"></div> <!--댓글창 코드 실행 X ㅜㅜ-->
+    <!--<script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://seoyoungs-web-page.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <br>-->
+    <hr>
+    <h6> MADE BY 20195153 NamSeoyoung</h6>
+</body>
+</html>
